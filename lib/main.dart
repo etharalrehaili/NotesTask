@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Class Task: Notes App (Local DB)',
+      title: 'Class Task',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent),
       ),
-      home: const MyHomePage(title: 'Flutter Notes App'),
+      home: const MyHomePage(title: 'Class Task: Notes App (Local DB)'),
     );
   }
 }

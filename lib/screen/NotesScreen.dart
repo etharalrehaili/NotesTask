@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Notes'),
+        title: const Text('Class Task: Notes App (Local DB)'),
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
       ),
@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: TextField(
                     controller: _controller,
                     decoration: const InputDecoration(
-                      hintText: 'Search or type a note...',
+                      hintText: 'Add a Note',
                       border: OutlineInputBorder(),
                     ),
                     onChanged: (value) {
@@ -103,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Expanded(
             child: _filteredNotes.isEmpty
-                ? const Center(child: Text('No matching notes.'))
+                ? const Center(child: Text('No notes available'))
                 : ListView.builder(
               itemCount: _filteredNotes.length,
               itemBuilder: (context, index) {
